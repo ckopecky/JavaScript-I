@@ -100,7 +100,7 @@ for (let i=0; i<carYears.length;i++){
   oldCars.push(carYears[i]);
   }
 }
- console.log(oldCars.length);
+ return(oldCars.length);
 
 
 // ==== Challenge 6 ====

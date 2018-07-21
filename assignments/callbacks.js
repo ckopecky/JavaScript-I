@@ -16,15 +16,16 @@ function getLength(arr, callback) {
     return callback(arr);
 }
   function size(arr){
-    console.log(arr.length);
+    return(arr.length);
   }
 
   getLength(items, size);
-  function last(arr, callback) {
+
+function last(arr, callback) {
   // last passes the last item of the array into the callback.
-    return callback(arr);
+  return callback(arr);
 }
-function lastItem (arr){
+function lastItem(arr){
   console.log(arr[arr.length-1]);
 }
 last(items,lastItem);
@@ -78,6 +79,6 @@ let unique = [] //declare empty array variable
             unique.push(array[i]);
         }
     }
-    console.log(unique);
+    return(unique);
 }
-removeDuplicates([1,1,4,3,7,4], unique);
+(removeDuplicates([1,1,4,3,7,4], unique));
