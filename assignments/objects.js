@@ -70,13 +70,13 @@ console.log(Antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 Kennan.speak = function(){
-  console.log("Hello, my name is Kennan!");
+  return("Hello, my name is Kennan!");
 };
 console.log(Kennan.speak());
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 Antonietta.multiplyNums = function (a,b){
-  console.log(a*b);
+  return(a*b);
 };
 console.log(Antonietta.multiplyNums(2,30));
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
@@ -90,19 +90,19 @@ const family = {
     "firstName":"Susan",
     "age":70,
     "speak": function(){
-      console.log("Hi, my name is "+ this.firstName +"!");
+      return("Hi, my name is "+ this.firstName +"!");
     },
     "child": {
       "firstName":"George",
       "age":50,
       "speak": function(){
-      console.log("Hi, my name is "+ this.firstName +"!");
+      return("Hi, my name is "+ this.firstName +"!");
       },
       "grandchild": {
         "firstName": "Sam",
         "age":30,
         "speak": function(){
-      console.log("Hi, my name is "+ this.firstName +"!");
+      return("Hi, my name is "+ this.firstName +"!");
       },
       }
     }
@@ -113,12 +113,12 @@ const family = {
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-console.log(family.parent.firstName);
-console.log(family.parent.child.age);
-console.log(family.parent.child.grandchild.firstName, family.parent.child.grandchild.age);
-console.log(family.parent.speak());
-console.log(family.parent.child.speak());
-console.log(family.parent.child.grandchild.speak());
+console.log("parentfirstname", family.parent.firstName);
+console.log("child age", family.parent.child.age);
+console.log("grandchild firstname, grandchildage", family.parent.child.grandchild.firstName, family.parent.child.grandchild.age);
+console.log("parentspeak", family.parent.speak());
+console.log("child speak", family.parent.child.speak());
+console.log("grandchild speak", family.parent.child.grandchild.speak());
 
 // Log the parent object's name
 
