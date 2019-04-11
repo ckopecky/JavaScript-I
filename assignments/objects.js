@@ -10,7 +10,7 @@
 // 5,adaine5@samsung.com,Antonietta,F
 
 // Example format of an intern object: 1,examples@you.edu,Example,F
-let example = {
+const example = {
   "id": 0,
   "name": "Example",
   "email": "examples@you.edu",
